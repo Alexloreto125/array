@@ -4,14 +4,17 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 10;
-let y = 20;
+let x = 60;
+let y = 60;
+console.log(
+  x > y ? "il numero più grande è " + x : "il numero più grande è " + y
+);
 
 if (x > y) {
-  console.log("il numero più grande è ", x);
+  console.log("il numero più grande è", x);
 } else if (x === y) {
   console.log("I numeri sono uguali");
-} else console.log("il numero più grande è ", y);
+} else console.log("il numero più grande è", y);
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -33,6 +36,7 @@ if (x !== 5) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 3");
 x = 10;
+console.log(x % 5 ? "Divisibile per 5" : "Non Divisibile");
 if (x % 5) {
   console.log("divisibile per 5");
 } else console.log("non divisibile per 5");
@@ -67,18 +71,18 @@ console.log(totalShoppingCart + 10 * (totalShoppingCart <= 50)); //!
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+//1 metodo
 console.log("ESERCIZIO 6");
 console.log(totalShoppingCart * 0.8 + 10 * (totalShoppingCart <= 50));
-//1 metodo
+//2 metodo
 totalShoppingCart = totalShoppingCart * 0.8;
 console.log(
   totalShoppingCart > 50
     ? "il totale è " + totalShoppingCart
     : "il totale è " + (totalShoppingCart + spedizione)
 );
-//2 metodo
-console.log(totalShoppingCart + 10 * (totalShoppingCart <= 50));
 //3 metodo
+console.log(totalShoppingCart + 10 * (totalShoppingCart <= 50));
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
